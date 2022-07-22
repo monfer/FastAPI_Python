@@ -1,7 +1,7 @@
-import models, schemas, utilis
+from .. import models, schemas, utilis
 from fastapi import Body, FastAPI, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
-from database import engine, get_db
+from ..database import engine, get_db
 from typing import Optional, List
 
 

@@ -1,10 +1,10 @@
 from datetime import timedelta, datetime
 from msilib import schema
 from jose import JWTError, jwt
-import schemas
+from . import schemas
 from fastapi import Depends, status, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from config import settings as s
+from .config import settings as s
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='login')
 

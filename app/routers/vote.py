@@ -1,7 +1,7 @@
 from statistics import mode
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
-import models, schemas, oauth2, database
+from .. import models, schemas, oauth2, database
 
 router = APIRouter(tags=['Votes'])
 
